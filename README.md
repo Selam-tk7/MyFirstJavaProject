@@ -1,2 +1,2 @@
-# MyFirstJavaProject
-MyFirstJavaProject to practice using Github
+# MyJavaProjects
+Simple but effective JavaProject i practiced using Github
