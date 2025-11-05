@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Main {
+   public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+       double principle;
+       double interest;
+       int cpdyear;
+       int years;
+       double amount;
+       System.out.println("enter the principle amount:");
+         principle = sc.nextDouble();
+       System.out.println("enter the interest rate(in %):");
+         interest = sc. nextDouble() / 100;
+       System.out.println("enter the # of time compound per year:");
+         cpdyear = sc.nextInt();
+       System.out.println("enter the # of years:");
+         years = sc.nextInt();
+       
+         amount = principle * Math.pow(1+ interest/cpdyear , cpdyear*years);
+           Math.round(amount);
+       System.out.println("the amount after 1 year is: "+ amount);
+       
+     sc.close();
+  }
+}
+}
