@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("weight conversion program");
+       System.out.println("1.convert lbs to kgs");
+       System.out.println("2.convert kgs to lbs");
+        System.out.println("choose an option:");
+       int option = sc.nextInt();
+      
+       if(option==1){
+           System.out.println("enter the weight in lbs");
+            double weight = sc.nextDouble();
+          double kgs = weight * 0.45359237;
+             System.out.println("the new weight in kgs is: " + kgs);
+       }else if(option==2){
+           System.out.println("enter the weight in kgs");
+            double weight = sc.nextDouble();
+           double lbs = weight / 0.45359237;
+            System.out.println("the new weight in lbs is: " + lbs);
+       }else{
+           System.out.println("you havent entered a value");
+       }
+       
+       sc.close();
+    }
+}
+}
